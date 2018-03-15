@@ -14,3 +14,5 @@ aws tutoriel
 5) serverless invoke --function dailyReminder --log
 
 6) serverless invoke --function weekendReminder --log
+
+7) serverless remove
