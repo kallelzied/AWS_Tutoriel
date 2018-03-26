@@ -1,7 +1,5 @@
 #Serverless Starter
 
-[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
-
 A bare bones Serverless Framework project with examples for common use cases.
 
 This project contains the following:
@@ -19,9 +17,7 @@ This project contains the following:
 ##Installation
 
 Clone the project from GitHub:
-```
-git clone https://github.com/serverless/serverless-starter.git
-```
+
 
 Enter the newly created folder:
 ```
