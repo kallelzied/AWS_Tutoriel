@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: 'send last login for a user to a given sns'
 Resources:
-  sendLastLoginToSNS:
+  authenticateJWT:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: publish_to_sns.lambda_handler
