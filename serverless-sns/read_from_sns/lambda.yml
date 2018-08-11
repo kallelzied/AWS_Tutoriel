@@ -1,17 +1,14 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
-Description: 'send last login for a user to a given sns'
+Description: 'read message from sns'
 Resources:
-  authenticateJWT:
+  readFromSns:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: publish_to_sns.lambda_handler
+      Handler: read_from_sns.lambda_handler
       Runtime: python2.7
-      Description: 'send last login for a user to a given sns'
+      Description: 'read event from sns'
       MemorySize: 128
       Timeout: 3
-      Role: 'arn:aws:iam::XXXXXXXXXXX:role/LambdaSNS'
+      Role: 'arn:aws:iam::XXXXXXXXXXX:role/Lambda'
       Environment:
-        Variables:
-          USER_LAST_LOGIN_SNS_TOPIC_ARN:
-            value: USER_LAST_LOGIN_SNS_TOPIC_ARN
